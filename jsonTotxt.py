@@ -48,7 +48,7 @@ number=[]
 for i in range(len(bodyall)):
     if not bodyall[i]:
         number.append(i)
-        print("空リストの削除now")
+        print("空リストの削除now ")
 for i in number:
     del bodyall[i]
     del titleall[i]
