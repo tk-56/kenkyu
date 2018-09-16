@@ -9,7 +9,7 @@ bodyall=[]
 titleall=[]
 #wordall=[]
 
-print("json読み込みの開始")
+print("jsonの読み込みの開始")
 for i in range(len(filename)):
     print(filename[i])
     f=open(filename[i],"r")
