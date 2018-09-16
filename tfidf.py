@@ -6,11 +6,11 @@ np.set_printoptions(threshold=np.inf)
 NUMBER=56 #表示したい記事番号
 
 
-f = open('body.txt', 'r')
+f = open('text/body.txt', 'r',encoding="utf-8")
 body = f.readlines()
 f.close()
 
-f = open('title.txt', 'r')
+f = open('text/title.txt', 'r',encoding="utf-8")
 title = f.readlines()
 f.close()
 
