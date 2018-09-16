@@ -21,6 +21,6 @@ gyoretu=X_tfidf.toarray()
 gyoretu=gyoretu[NUMBER]
 print(title[NUMBER])
 for i in range(len(name)):
-    if gyoretu[i] >0:
+    if gyoretu[i] > 0:
         print(name[i])
         print(gyoretu[i])
