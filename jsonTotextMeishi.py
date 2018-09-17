@@ -63,7 +63,8 @@ for i in range(len(bodyall)):
     bodyall[i]=" ".join(bodyall[i])
 print("削除完了")
 
-bodyallM=[]
+
+word=[]
 tagger = MeCab.Tagger ("-Ochasen")
 for i in range(len(bodyall)):
     tagger.parse("")
@@ -72,13 +73,13 @@ for i in range(len(bodyall)):
         if node.feature[0]=="名":
             word.append(node.surface)
         node = node.next
-    word=" ".join(word)
-    bodyallM.append(word)
+    bodyall[i]=" ".join(word)
+    word=[]
 
 
 print("ファイルへの書き込み中")
 f = open('textM/body.txt', 'w')
-for i in bodyallM:
+for i in bodyall:
     f.write(str(i) + "\n")
     #f.write(str(i))
 f.close()
