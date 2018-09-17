@@ -1,7 +1,7 @@
 import collections
 
 newwordlist=[]
-f = open('count/tfcount.txt', 'r',encoding="utf-8")
+f = open('countM/tfcountM.txt', 'r',encoding="utf-8")
 wordlist = f.readlines()
 f.close()
 for i in range(len(wordlist)):

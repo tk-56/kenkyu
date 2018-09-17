@@ -7,11 +7,11 @@ np.set_printoptions(threshold=np.inf)
 NUMBER=56 #表示したい記事番号
 
 
-f = open('text/body.txt', 'r',encoding="utf-8")
+f = open('textM/body.txt', 'r',encoding="utf-8")
 body = f.readlines()
 f.close()
 
-f = open('text/title.txt', 'r',encoding="utf-8")
+f = open('textM/title.txt', 'r',encoding="utf-8")
 title = f.readlines()
 f.close()
 
@@ -47,7 +47,7 @@ for i in range(len(gyoretuall)):
     counter=0
 print(wordlist)
 
-f = open('count/tfcount.txt', 'w',encoding="utf-8")
+f = open('countM/tfcountM.txt', 'w',encoding="utf-8")
 for i in wordlist:
     f.write(str(i)+"\n")
 f.close()
