@@ -64,6 +64,7 @@ for i in range(len(bodyall)):
 print("削除完了")
 
 """
+tagger = MeCab.Tagger ("-Ochasen")
 for i in range(len(body)):
     tagger.parse("")
     node = tagger.parseToNode(body[i])
