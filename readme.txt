@@ -1,0 +1,4 @@
+bodyフォルダには記事の内容のtfidf
+titleフォルダには記事のタイトルのtfidf
+clowlerにはqiitaの記事収集 jsonにcodeタグを追加
+txtにはqiitaフォルダのjsonをtxtにしたものを格納
